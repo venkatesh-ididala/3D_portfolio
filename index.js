@@ -1,62 +1,227 @@
-import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
-
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
-export {
-  logo,
+import {
+  mobile,
   backend,
   creator,
-  mobile,
   web,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
   javascript,
-  mongodb,
-  nodejs,
+  typescript,
+  html,
+  css,
   reactjs,
   redux,
   tailwind,
-  typescript,
-  threejs,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
   meta,
-  shopify,
   starbucks,
   tesla,
+  shopify,
   carrent,
   jobit,
   tripguide,
-};
+  threejs,
+} from "../assets";
+
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
+const services = [
+  {
+    title: "Web Developer",
+    icon: web,
+  },
+  {
+    title: "React  Developer",
+    icon: mobile,
+  },
+  {
+    title: "Backend Developer",
+    icon: backend,
+  },
+  {
+    title: "Problem Solver",
+    icon: creator,
+  },
+];
+
+const technologies = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  
+];
+
+const experiences = [
+  {
+    title: "Java Developer",
+    company_name: "Internpe",
+    
+    
+    date: "April 2024 - June 2024",
+    points: [
+      "Successfully completed multiple Java-based projects, ranging from simple web applications to complex data processing tools, maintaining a 100% project success rate.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Web  Developer",
+    company_name: "GAO Tek",
+    date: " July 2024 - October 2024",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      
+    ],
+  },
+  
+ 
+];
+
+const testimonials = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "Sara Lee",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+];
+
+const projects = [
+  {
+    name: "Portfolio",
+    description:"An engaging portfolio webpag,ensure it's animated to vividly showcase your skills.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "three js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Textutils",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects };
